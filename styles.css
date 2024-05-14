@@ -1,28 +1,32 @@
 body{
-  background-color: #e9ecf2;
+  background-color: #f5f7fc;
   margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #sidebar{
-  width: 70px;
+  width: 90px;
 }
 
 #gmailcompose{
-  width: 270px;
+  width: 290px;
 }
 
-.container {
+.container1 {
   display: flex;
+  flex-direction: row;
 }
 
-.image-container img {
-  display: inline-flex;
+.container2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 
 .sidebar {
   width: 140px;
   height: 780px;
-  background-color: #333;
+  background-color: #f5f7fc;
   color: white;
   padding: 20px;
 }
@@ -33,12 +37,20 @@ body{
 }
 
 .sidebar ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+
 }
 
 .sidebar ul li a {
-  color: white;
+  color: #2d2d2e;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #cbcbd1;
+  border-radius: 15px;
+  background-size: 190%;
 }
 
 .content {
