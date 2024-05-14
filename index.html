@@ -1,60 +1,20 @@
-</head>
-<title>
-  MAAD
-</title>
-<body>
-  <div id="bg-container">
-    <img id="bg-image" src="black2.jpeg" alt="Background Image">
-    <a href="https://eva-dev1.github.io/finalproj2/" target="_self" id="clickable-area"></a>
-  </div>
-  <script src="script.js"></script>
-  
-  
-  
-  
-</body>
-
-
-<style>
-
-
-    
-#bg-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  }
-  
-#bg-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  cursor: url("result.png"), auto;
-}
-  #clickable-area {
-  position: absolute;
-  top: 10px; 
-  left: 10px; 
-  width: 10px; 
-  height: 10px; 
-  cursor: default;
-  }
-  
-</style>
+<link rel="stylesheet" href="styles.css">
 
 
 
-<script>
-const bgImage = document.getElementById('bg-image');
-const images = ['slightlycracked.jpeg', 'morecracked.jpeg', 'verycrackedglass.jpeg','lastcracked1.jpeg', 'breakglasshere.png']; 
-  
-let currentImageIndex = 0;
+<div class="container">
+  <div class="image-container">
+     <img id="sidebar" src="sidebar.png" alt="fake sidebar image">
+     <img id="gmailcompose" src="gmailcompose.png" alt="compose button and logo">
+   </div>
+    <div class="sidebar">
+      <ul>
+        <li><a href="#">Inbox</a></li>
+        <li><a href="#">Starred</a></li>
+        <li><a href="#">Snoozed</a></li>
+        <li><a href="#">Sent</a></li>
+        <li><a href="#">Drafts</a></li>
+      </ul>
+    </div>
 
-bgImage.addEventListener('click', () => {
-  currentImageIndex = (currentImageIndex + 1) % images.length;
-  bgImage.src = images[currentImageIndex];
-});
-</script>
+<script src="main.js"></script>

@@ -1,0 +1,47 @@
+body{
+  background-color: #e9ecf2;
+  margin: 0px;
+}
+
+#sidebar{
+  width: 70px;
+}
+
+#gmailcompose{
+  width: 270px;
+}
+
+.container {
+  display: flex;
+}
+
+.image-container img {
+  display: inline-flex;
+}
+
+.sidebar {
+  width: 140px;
+  height: 780px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
