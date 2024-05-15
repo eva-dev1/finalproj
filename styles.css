@@ -5,7 +5,7 @@ body{
 }
 
 #sidebar{
-  width: 90px;
+  width: 80px;
 }
 
 #gmailcompose{
@@ -140,4 +140,29 @@ body{
 
 #bye{
   margin-top: 25px;
+}
+
+#mainpfp {
+  height: 45px;
+  margin-left: 15px;
+  margin-top: 17px;
+}
+
+.topbar {
+  display: flex;
+}
+
+.rightmost {
+  display: flex;
+  flex-direction: column;
+}
+
+.mails {
+  margin-top: 25px;
+}
+
+.mails img {
+  width: 1000px;
+  border-bottom: 1px solid gray;
+
 }
