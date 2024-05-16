@@ -126,7 +126,7 @@ body{
 
 #time {
   font-size: 10px;
-  margin-top: 25px;
+  margin-top: 21px;
 }
 
 #greeting {
@@ -170,4 +170,27 @@ body{
 #hotelpic {
   height: 250px;
   margin-top: 30px;
+}
+
+.scarves {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+#scarf1 {
+  height: 150px;
+}
+
+#scarf2 {
+  height: 150px;
+}
+
+#scarf3 {
+  height: 150px;
+}
+
+#macys {
+  margin-top: 50px;
+  height: 50px;
 }
