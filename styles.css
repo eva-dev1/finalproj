@@ -166,3 +166,8 @@ body{
   border-bottom: 1px solid gray;
 
 }
+
+#hotelpic {
+  height: 250px;
+  margin-top: 30px;
+}
