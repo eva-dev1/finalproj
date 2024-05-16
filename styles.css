@@ -98,6 +98,11 @@ body{
   margin-top: 10px;
 }
 
+#flipscreen {
+  width: 180px;
+  margin-top: 50px;
+}
+
 .emailheader {
   display: flex;
   flex-direction: row;
@@ -158,7 +163,7 @@ body{
 }
 
 .mails {
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
 .mails img {
