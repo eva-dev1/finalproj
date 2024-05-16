@@ -22,15 +22,28 @@
        <img id="mainpfp" src="clearpfp3.png" alt="profile picture">
      </div>
      <div class="mails">
-    <a href="email1.html">
-     <img id="emailpic1" src="emailpic1.png" alt="first email">
+    <a href="email3.html">
+     <img id="emailpic3" src="emailpic3.png" alt="first email">
    </a>
-   <a href="email2.html">
+   <a href="email3.html">
      <img id="emailpic2" src="emailpic2.png" alt="second email">
+   </a>
+   <a href="email1.html">
+     <img id="emailpic1" src="emailpic1.png" alt="third email">
+   </a>
+   <a href="email4.html">
+     <img id="emailpic4" src="emailpic4.png" alt="fourth email">
    </a>
      </div>
      </div>
    </div>
 
 
-<script src="main.js"></script>
+<script>
+
+    if(sessionStorage.getItem('showAlert') != "false"){
+        alert("WARNING! Private Information. Would you like to proceed?");
+        sessionStorage.setItem('showAlert', "false");
+    }
+
+</script>

@@ -1,8 +1,95 @@
-<link rel="stylesheet" href="styles.css">
+<style>
+
+  body{
+      background-color: black;
+      font-family: "Monaco", monospace;
+      font-size: 30px;
+    }
+
+    .container{
+      display: inline;
+      margin-top: 70px;
+    }
 
 
+.typedwords {
+  color: red;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 8s steps(50, end) forwards, blinking 1s infinite;
+  animation-delay: 1s;
+}
 
-<p>message</p>
+.typedwords2 {
+  color: red;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 8s steps(50, end) forwards, blinking 1s infinite;
+  animation-delay: 11s;
+}
+
+.typedwords3 {
+  color: red;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 8s steps(50, end) forwards, blinking 1s infinite;
+  animation-delay: 21s;
+}
+
+.typedwords4 {
+  color: red;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 8s steps(50, end) forwards, blinking 1s infinite;
+  animation-delay: 30s;
+  text-decoration: none;
+}
 
 
-<script src="main.js"></script>
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blinking {
+  0% {border-right-color: black}
+  50% {border-right-color: white}
+  100% {border-right-color: black}
+}
+
+#black {
+  height: 220px;
+}
+
+#black2 {
+  height: 160px;
+}
+
+.bigcontainer {
+  display: flex;
+  flex-direction: row
+}
+
+  </style>
+<div class="bigcontainer">
+  <img id="black2" src="black.png" alt="black">
+  <div class="containter">
+    <img id="black" src="black.png" alt="black">
+    <p class="typedwords">Shortly, you will enter Melissa Wright's Gmail Inbox.</p>
+    <p class="typedwords2">Names, dates, and some details have been changed...</p>
+    <p class="typedwords3">But the following information is based on real data.</p>
+    <p class="typedwords4">
+      <a href="inbox.html">
+        Click Here To Enter
+      </a>
+    </p>
+  </div>
+</div>
