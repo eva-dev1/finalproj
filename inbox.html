@@ -23,40 +23,46 @@
      </div>
      <div class="mails">
     <a href="email3.html">
-     <img id="emailpic3" src="emailpic3.png" alt="first email">
+     <img id="emailpic3" src="emailpic3.png" alt="zeroth email">
    </a>
    <a href="email2.html">
-     <img id="emailpic2" src="emailpic2.png" alt="second email">
+     <img id="emailpic2" src="emailpic2.png" alt="first email">
    </a>
-   <a href="email1.html">
-     <img id="emailpic1" src="emailpic1.png" alt="third email">
+   <a class="link1" href="email1.html">
+     <img id="emailpic1" src="emailpic1.png" alt="second email" onclick="changeImage()">
    </a>
    <a href="email11.html">
-     <img id="emailpic11" src="emailpic11F.png" alt="eleventh email"
+     <img id="emailpic11" src="emailpic11F.png" alt="third email"
    </a>
    <a href="email6.html">
      <img id="emailpic6" src="emailpic6.png" alt="fourth email">
    </a>
+   <a href="email13.html">
+     <img id="emailpic13" src="emailpic13.png" alt="fifth email">
+   </a>
    <a href=email5.html>
-     <img id="emailpic5" src="emailpic5.png" alt="fifth email">
+     <img id="emailpic5" src="emailpic5.png" alt="sixth email">
    </a>
    <a href="email4.html">
-     <img id="emailpic4" src="emailpic4.png" alt="sixth email">
+     <img id="emailpic4" src="emailpic4.png" alt="seventh email">
    </a>
    <a href="email7.html">
-     <img id="emailpic7" src="emailpic7.png" alt="seventh email">
+     <img id="emailpic7" src="emailpic7.png" alt="eigth email">
    </a>
    <a href="email8.html">
-     <img id="emailpic8" src="emailpic8.png" alt="eigth email">
+     <img id="emailpic8" src="emailpic8.png" alt="ninth email">
    </a>
    <a href="email9.html">
-     <img id="emailpic9" src="emailpic9.png" alt="ninth email">
+     <img id="emailpic9" src="emailpic9.png" alt="tenth email">
+   </a>
+   <a href="email14.html" onclick>
+     <img id="emailpic14" src="emailpic14.png" alt="eleventh email">
    </a>
    <a href="email10.html">
-     <img id="emailpic10" src="emailpic10.png" alt="tenth email">
+     <img id="emailpic10" src="emailpic10.png" alt="twelfth email">
    </a>
-   <a href="email12.html">
-     <img id="emailpic12" src="emailpicP.png" alt="twelfth email">
+   <a href="email12.html" onclick>
+     <img id="emailpic12" src="emailpicP.png" alt="thirteenth email">
    </a>
      </div>
         <img id="flipscreen" src="switchpage.png" alt="little arrows">
@@ -71,6 +77,12 @@
     if(sessionStorage.getItem('showAlert') != "false"){
         alert("WARNING! PRIVATE INFORMATION. Would you like to proceed?");
         sessionStorage.setItem('showAlert', "false");
+    }
+
+    function changeImage() {
+        var image = document.getElementById('emailpic1');
+        image.src = "jacobRead.png";
+        image.alt = "read email 1";
     }
 
 </script>
